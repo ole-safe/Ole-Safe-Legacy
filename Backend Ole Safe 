@@ -2,12 +2,12 @@
 #include <string>
 
 Class friend(){
-Private:
+private:
 	string contact_name;
 	string phone_num;
 	bool available = TRUE;
 	int priority = [1,2];
-Public:
+public:
 	void set_name(string name){
 		contact_name = name;
 	}
@@ -49,12 +49,12 @@ Class User{
 	     }
 
 
-        void set_friend(string fr){
+    void set_friend(string fr){
 		friend[friend_num] = fr;
 		++friend_num;
         }
 
-        void delete_friend(){
+     void delete_friend(){
 		friend[friend_num] = "";
 		—friend_num;
         }
